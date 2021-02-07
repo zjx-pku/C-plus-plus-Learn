@@ -1,5 +1,0 @@
-﻿  Exercise.cpp
-c:\users\srxh\desktop\c_++_learn\exercise\exercise\exercise.cpp(55): warning C4305: “参数”: 从“double”到“float”截断
-c:\users\srxh\desktop\c_++_learn\exercise\exercise\exercise.cpp(56): warning C4305: “参数”: 从“double”到“float”截断
-c:\users\srxh\desktop\c_++_learn\exercise\exercise\exercise.cpp(57): warning C4305: “参数”: 从“double”到“float”截断
-  Exercise.vcxproj -> C:\Users\srxh\Desktop\C_++_Learn\Exercise\Debug\Exercise.exe
