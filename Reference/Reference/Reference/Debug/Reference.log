@@ -1,3 +1,0 @@
-﻿  Reference.cpp
-c:\users\srxh\desktop\c_++_learn\reference\reference\reference\reference.cpp(37): warning C4244: “初始化”: 从“double”转换到“const int”，可能丢失数据
-  Reference.vcxproj -> C:\Users\srxh\Desktop\C_++_Learn\Reference\Reference\Debug\Reference.exe
