@@ -156,11 +156,28 @@ public:
 /*Ex10 指向对象成员的指针*/
 class Ex10
 {
-
+public:
+	Ex10(int h, int m, int s);
+	int hour;
+	int minute;
+	int second;
+	void get_time();
 };
 
 int main()
 {
+	/*Ex10*/
+	cout << endl << "Ex10 is running..." << endl;
+	Ex10 time10(12, 12, 12);
+	int* p_hour = &time10.hour;								//指向对象数据成员的指针：	数据类型*指针名=&对象数据成员
+	Ex10* p_time10 = &time10;								//指向对象的指针			类名*指针名=&对象
+	void (Ex10::* p_get_time) () = & Ex10::get_time;		//指向对象函数成员的指针	函数返回值类型(类名::*指针名)()=&类名::函数名
+
+	cout << *p_hour << endl;
+	cout << p_time10->hour << ":" << p_time10->minute << ":" << p_time10->second << endl;
+	p_time10->get_time();
+	(time10.*p_get_time)();
+
 	/*Ex09*/
 	cout << endl << "Ex09 is running..." << endl;
 	Ex09* pt;					//建立一个指向Ex09对象的指针
@@ -275,4 +292,16 @@ Ex06::Ex06(int h, int w, int l)
 int Ex06::volume()
 {
 	return height * width * length;
+}
+
+/*Ex10*/
+Ex10::Ex10(int h, int m, int s)
+{
+	hour = h;
+	minute = m;
+	second = s;
+}
+void Ex10::get_time()
+{
+	cout << "Current time: " << hour << ":" << minute << ":" << second << endl;
 }
