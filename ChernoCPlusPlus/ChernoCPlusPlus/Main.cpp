@@ -1,7 +1,11 @@
 ﻿void log(const char* message);
 int main()
 {
-	log("Hello world!");
+	const char* ptr = nullptr;
+	if (ptr)
+		log(ptr);
+
+		
 }
 
 //LearnToP11
